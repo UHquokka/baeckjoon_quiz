@@ -6,7 +6,6 @@ function solution(score) {
     const sortArr = avr.map(v => v).sort((a, b) => b - a);
     let index = [];
     for (let i = 0; i < avr.length; i++) {
-        console.log(avr[i])
         index.push((sortArr.findIndex(v => v == avr[i]) + 1)
         )
     }
