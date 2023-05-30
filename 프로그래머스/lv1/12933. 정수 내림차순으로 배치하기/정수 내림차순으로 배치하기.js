@@ -4,6 +4,6 @@ function solution(n) {
         nums.push(n % 10)
         n = Math.floor(n / 10);
     }
-     return Number(nums.sort((a, b) => b - a).join(""))
+     return +nums.sort((a, b) => b - a).join("")
 
 }
