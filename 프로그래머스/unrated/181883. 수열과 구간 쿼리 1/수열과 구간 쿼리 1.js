@@ -1,6 +1,4 @@
 function solution(arr, queries) {
-    queries.forEach(([s, e]) => {
-        arr = arr.map((v, i) => (s <= i && i <= e) ? v + 1 : v);
-    })
-return arr;
+    for (let [s,e] of queries) for (let i=s; i<= e; i++) arr[i]++
+    return arr
 }
