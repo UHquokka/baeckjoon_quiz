@@ -1,7 +1,7 @@
 function solution(food) {
-    let oneCount = [];
-    food.map((v, i) => i > 0 && oneCount.push(Math.floor(v / 2)))
-    const arr = oneCount.map((v, i) => new Array(v).fill(i + 1)).flat();
-    const rev = [...arr].reverse().join("");
-    return arr.join("") + "0" + rev;
+    const arr = food.map((v, i) => {
+        const count = Math.floor(v / 2);
+        return new Array(count).fill(i);
+    }).flat();
+    return arr.join("") + "0" + arr.reverse().join("");
 }
