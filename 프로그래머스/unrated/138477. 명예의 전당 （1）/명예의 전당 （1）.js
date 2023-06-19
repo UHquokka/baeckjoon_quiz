@@ -1,5 +1,4 @@
 function solution(k, score) {
-
     let low = [];
     let arr = new Array(k).fill(score[0]);
     for (let i = 0; i < score.length; i++) {
