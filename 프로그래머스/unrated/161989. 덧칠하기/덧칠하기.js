@@ -1,5 +1,4 @@
 function solution(n, m, sections) {
-    const line = Math.floor(n / m);
     let allSection = new Array(n + 1).fill(0);
     Array.from(sections, x => allSection[x] = -1);
 
