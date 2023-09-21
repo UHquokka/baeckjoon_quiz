@@ -5,7 +5,6 @@ d.sort((a, b)=> a-b)
     for(i=0; i<d.length; i++){
        sum += d[i];
         count++;
-        console.log(i, sum, budget)
         if(sum === budget) {return count}
         if(sum > budget) {return count-1}
     }
