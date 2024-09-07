@@ -1,4 +1,7 @@
 function solution(a, b) {
-if(a == b) return a;
-    return  (Math.abs(b - a) + 1) * (a + b) / 2
+    let sum = 0;
+    for(i= Math.min(a, b); i<=Math.max(a, b); i++){
+        sum += i
+    }
+    return sum
 }
